@@ -8,17 +8,17 @@ def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
 
 def getVersionName = { ->
-    return "1.0.2"  // Replace with version Name
+    return "1.0.3"  // Replace with version Name
 }
 
 def getArtificatId = { ->
-    return "mylibrary" // Replace with library name ID
+    return "mylibrary2" // Replace with library name ID
 }
 
 publishing {
     publications {
         bar(MavenPublication) {
-            groupId 'com.ivanmac.ivansstuff' // Replace with group ID
+            groupId 'com.ivanmac' // Replace with group ID
             artifactId getArtificatId()
             version getVersionName()
             artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
@@ -33,7 +33,7 @@ publishing {
              *  Replace GITHUB_USERID with your/organisation Github userID and REPOSITORY with the repository name on GitHub
              url = uri("https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY")
              */
-            url = uri("https://maven.pkg.github.com/ivanmac/mylibrary")
+            url = uri("https://maven.pkg.github.com/ivanmac/mylibrary2")
 
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/

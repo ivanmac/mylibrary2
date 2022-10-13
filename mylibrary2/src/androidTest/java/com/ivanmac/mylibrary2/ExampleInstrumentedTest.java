@@ -1,4 +1,4 @@
-package com.ivanmac.mylibrary;
+package com.ivanmac.mylibrary2;
 
 import android.content.Context;
 

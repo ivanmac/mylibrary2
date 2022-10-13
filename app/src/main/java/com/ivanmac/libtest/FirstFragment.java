@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.ivanmac.libtest.databinding.FragmentFirstBinding;
-import com.ivanmac.mylibrary.MyClass;
+import com.ivanmac.mylibrary2.MyClass;
 
 public class FirstFragment extends Fragment {
 
